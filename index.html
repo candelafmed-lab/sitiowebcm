@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óptimo Digital - Candela Díaz | Social Media Manager & Community Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #19302a 0%, #2a4a3f 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .section-padding { padding: 80px 0; }
+        .text-gradient { background: linear-gradient(135deg, #19302a 0%, #2a4a3f 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bg-brand-light { background-color: #fdfff4; }
+        .text-brand-dark { color: #19302a; }
+        .bg-brand-dark { background-color: #19302a; }
+        .border-brand-dark { border-color: #19302a; }
+        .hover-brand-dark:hover { background-color: #2a4a3f; }
+    </style>
+</head>
+<body class="bg-brand-light">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <!-- Logo SVG -->
+                    <div class="w-10 h-10 bg-brand-dark rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2ZM12 4.3L19 8.2V10C19 15.1 16.2 18.7 12 20C7.8 18.7 5 15.1 5 10V8.2L12 4.3ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-xl font-bold text-brand-dark">Óptimo Digital</div>
+                        <div class="text-xs text-gray-600">por Candela Díaz</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-brand-dark transition-colors">Inicio</a>
+                    <a href="#sobre-mi" class="text-gray-700 hover:text-brand-dark transition-colors">Sobre mí</a>
+                    <a href="#servicios" class="text-gray-700 hover:text-brand-dark transition-colors">Servicios</a>
+                    <a href="#proceso" class="text-gray-700 hover:text-brand-dark transition-colors">Proceso</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-brand-dark transition-colors">Portfolio</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-brand-dark transition-colors">Contacto</a>
+                </div>
+                <button id="menu-toggle" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#inicio" class="block text-gray-700 hover:text-brand-dark py-2">Inicio</a>
+                <a href="#sobre-mi" class="block text-gray-700 hover:text-brand-dark py-2">Sobre mí</a>
+                <a href="#servicios" class="block text-gray-700 hover:text-brand-dark py-2">Servicios</a>
+                <a href="#proceso" class="block text-gray-700 hover:text-brand-dark py-2">Proceso</a>
+                <a href="#portfolio" class="block text-gray-700 hover:text-brand-dark py-2">Portfolio</a>
+                <a href="#contacto" class="block text-gray-700 hover:text-brand-dark py-2">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="gradient-bg min-h-screen flex items-center text-white">
+        <div class="max-w-6xl mx-auto px-4 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2ZM12 4.3L19 8.2V10C19 15.1 16.2 18.7 12 20C7.8 18.7 5 15.1 5 10V8.2L12 4.3ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="text-4xl md:text-5xl font-bold">Óptimo Digital</h1>
+                            <p class="text-lg opacity-80">por Candela Díaz</p>
+                        </div>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-light mb-6">Social Media Manager & Community Manager</h2>
+                    <p class="text-xl mb-8 opacity-90">"Transformo ideas en estrategias digitales que conectan y venden"</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Me%20interesa%20conocer%20más%20sobre%20tus%20servicios%20de%20Social%20Media%20Manager" target="_blank" rel="noopener noreferrer" class="bg-brand-light text-brand-dark px-8 py-3 rounded-full font-semibold hover:bg-white transition-colors text-center">Trabajemos juntos</a>
+                        <a href="#servicios" class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-brand-dark transition-colors text-center">Ver servicios</a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-80 h-80 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                        <div class="w-full h-full bg-white/30 rounded-full flex items-center justify-center overflow-hidden">
+                            <img src="https://i.imgur.com/PTDvewc.jpg" alt="Candela Díaz - Social Media Manager" class="w-full h-full object-cover rounded-full" onerror="this.src=''; this.alt='Candela Díaz'; this.style.display='none';">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section-padding bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8 text-gradient">✨ Sobre mí</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-12">
+                Soy creadora de estrategias digitales enfocadas en ayudar a negocios y emprendedores a crecer en redes sociales con organización, creatividad y planificación estratégica. Me especializo en diseñar propuestas personalizadas, adaptadas a los objetivos y necesidades de cada marca.
+            </p>
+
+            <!-- Equipo de Trabajo -->
+            <div class="bg-brand-light rounded-2xl p-8">
+                <h3 class="text-2xl font-bold mb-8 text-brand-dark">👥 Mi Equipo de Trabajo</h3>
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="text-4xl mb-4">👥</div>
+                        <h4 class="text-xl font-semibold mb-3 text-brand-dark">Equipo de Community Managers</h4>
+                        <p class="text-gray-600">Profesionales especializados en gestión diaria de comunidades, respuesta a mensajes, monitoreo de tendencias y dinamización de la audiencia.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <div class="text-4xl mb-4">📸</div>
+                        <h4 class="text-xl font-semibold mb-3 text-brand-dark">Fotógrafo Profesional</h4>
+                        <p class="text-gray-600">Para producciones de alta calidad cuando tu proyecto requiere fotos o videos más elaborados y profesionales.</p>
+                    </div>
+                </div>
+                <div class="bg-brand-dark text-white px-6 py-3 rounded-full inline-block">
+                    <span class="font-semibold">✅ Respaldo profesional garantizado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section-padding bg-brand-light">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gradient">🚀 Servicios</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Social Media Manager -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="text-3xl mb-4">🔹</div>
+                    <h3 class="text-2xl font-bold mb-4 text-brand-dark">Social Media Manager</h3>
+                    <p class="text-gray-600 mb-6">(estrategia & organización)</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="text-brand-dark mr-2">•</span>Auditoría inicial de la marca en redes. Branding básico (paleta de colores, tipografías, estilo visual)</li>
+                        <li class="flex items-start"><span class="text-brand-dark mr-2">•</span>Definición de objetivos SMART y público ideal</li>
+                        <li class="flex items-start"><span class="text-brand-dark mr-2">•</span>Creación de calendarios de contenido</li>
+                        <li class="flex items-start"><span class="text-brand-dark mr-2">•</span>Plantillas editables en Canva</li>
+                        <li class="flex items-start"><span class="text-brand-dark mr-2">•</span>Guiones para reels y storytelling de marca</li>
+                        <li class="flex items-start"><span class="text-brand-dark mr-2">•</span>Estrategias de crecimiento y posicionamiento</li>
+                        <li class="flex items-start"><span class="text-brand-dark mr-2">•</span>Análisis de métricas y optimización</li>
+                    </ul>
+                </div>
+
+                <!-- Community Manager -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="text-3xl mb-4">🔹</div>
+                    <h3 class="text-2xl font-bold mb-4 text-brand-dark">Community Manager</h3>
+                    <p class="text-gray-600 mb-6">(gestión diaria de la comunidad)</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="text-brand-dark mr-2">•</span>Publicación de contenidos según el calendario</li>
+                        <li class="flex items-start"><span class="text-brand-dark mr-2">•</span>Monitoreo y respuesta de mensajes/comentarios</li>
+                        <li class="flex items-start"><span class="text-brand-dark mr-2">•</span>Dinamización de la comunidad</li>
+                        <li class="flex items-start"><span class="text-brand-dark mr-2">•</span>Seguimiento de tendencias para aplicar en la marca</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Servicios adicionales -->
+            <div class="gradient-bg rounded-2xl p-8 text-white">
+                <h3 class="text-2xl font-bold mb-6">🔹 Servicios adicionales ✨ creación de contenido</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <ul class="space-y-3">
+                            <li class="flex items-start"><span class="mr-2">•</span>Edición de reels (adaptados a tendencias y objetivos de la marca)</li>
+                            <li class="flex items-start"><span class="mr-2">•</span>Creación de piezas gráficas (carruseles, flyers, posts)</li>
+                            <li class="flex items-start"><span class="mr-2">•</span>Portfolios de trabajos profesionales</li>
+                            <li class="flex items-start"><span class="mr-2">•</span>Catálogos digitales interactivos</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-3">
+                            <li class="flex items-start"><span class="mr-2">•</span>Invitaciones interactivas personalizadas</li>
+                            <li class="flex items-start"><span class="mr-2">•</span>Automatizaciones (ej. ManyChat, WhatsApp Business)</li>
+                            <li class="flex items-start"><span class="mr-2">•</span>Gestión de campañas publicitarias</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de trabajo -->
+    <section id="proceso" class="section-padding bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gradient">⚡ Mi proceso de trabajo</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-brand-light border-2 border-brand-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-brand-dark">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-brand-dark">Primera llamada</h3>
+                    <p class="text-gray-600">Conozco tu negocio, escucho tus objetivos y me contás en qué punto estás actualmente.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-brand-light border-2 border-brand-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-brand-dark">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-brand-dark">Análisis + propuesta</h3>
+                    <p class="text-gray-600">Preparo un plan adaptado a tus objetivos SMART y pilares de contenido.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-brand-light border-2 border-brand-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-brand-dark">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-brand-dark">Confirmación & primer pago</h3>
+                    <p class="text-gray-600">Si avanzamos, se realiza el primer pago (50%).</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-brand-light border-2 border-brand-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-brand-dark">4</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-brand-dark">Planificación estratégica</h3>
+                    <p class="text-gray-600">Desarrollo el plan y calendario (1-2 semanas).</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-brand-light border-2 border-brand-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-brand-dark">5</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-brand-dark">Entrega organizada</h3>
+                    <p class="text-gray-600">Recibís todo organizado con tableros Trello y plantillas editables en Canva.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-brand-light border-2 border-brand-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-brand-dark">6</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-brand-dark">Revisión & aprobación</h3>
+                    <p class="text-gray-600">Ajustes si es necesario, y cuando das el OK avanzamos.</p>
+                </div>
+
+                <div class="text-center md:col-span-2 lg:col-span-1 lg:col-start-2">
+                    <div class="w-16 h-16 bg-brand-light border-2 border-brand-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-brand-dark">7</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-brand-dark">Segundo pago & ejecución</h3>
+                    <p class="text-gray-600">Con el segundo pago confirmado (50%), inicio la ejecución del plan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section-padding bg-brand-light">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gradient">🎨 Portfolio</h2>
+            
+            <!-- Casos de Estudio -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-center mb-12 text-brand-dark">📊 Casos de Estudio - Resultados Reales</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- Caso 1 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg card-hover cursor-pointer" onclick="showCaseStudy('ahumados')">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-brand-dark rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold">1</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-brand-dark">Los Ahumados de Juan</h4>
+                                <p class="text-gray-600">3 meses de gestión</p>
+                            </div>
+                            <div class="ml-auto">
+                                <svg class="w-6 h-6 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="text-center p-4 bg-brand-light rounded-lg">
+                                <div class="text-3xl mb-2">👥</div>
+                                <div class="text-2xl font-bold text-brand-dark">+66</div>
+                                <div class="text-sm text-gray-600">Seguidores</div>
+                            </div>
+                            <div class="text-center p-4 bg-brand-light rounded-lg">
+                                <div class="text-3xl mb-2">👀</div>
+                                <div class="text-2xl font-bold text-brand-dark">+966%</div>
+                                <div class="text-sm text-gray-600">Visualizaciones</div>
+                            </div>
+                            <div class="text-center p-4 bg-brand-light rounded-lg">
+                                <div class="text-3xl mb-2">💬</div>
+                                <div class="text-2xl font-bold text-brand-dark">+45.300%</div>
+                                <div class="text-sm text-gray-600">Interacciones</div>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-700 text-sm italic mb-4">"Proceso: Optimización de perfil → Referente a cámara → Contenido diversificado → Catálogo WhatsApp → Comunidad orgánica"</p>
+                        <div class="text-center">
+                            <span class="text-brand-dark font-semibold text-sm">👆 Haz click para ver el proceso completo</span>
+                        </div>
+                    </div>
+
+                    <!-- Caso 2 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg card-hover cursor-pointer" onclick="showCaseStudy('diseno')">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-brand-dark rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold">2</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-brand-dark">Diseño Urbano</h4>
+                                <p class="text-gray-600">2 meses de gestión</p>
+                            </div>
+                            <div class="ml-auto">
+                                <svg class="w-6 h-6 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="text-center p-4 bg-brand-light rounded-lg">
+                                <div class="text-3xl mb-2">👥</div>
+                                <div class="text-2xl font-bold text-brand-dark">+141</div>
+                                <div class="text-sm text-gray-600">Seguidores</div>
+                            </div>
+                            <div class="text-center p-4 bg-brand-light rounded-lg">
+                                <div class="text-3xl mb-2">👀</div>
+                                <div class="text-2xl font-bold text-brand-dark">+264%</div>
+                                <div class="text-sm text-gray-600">Visualizaciones</div>
+                            </div>
+                            <div class="text-center p-4 bg-brand-light rounded-lg">
+                                <div class="text-3xl mb-2">💬</div>
+                                <div class="text-2xl font-bold text-brand-dark">+2.494%</div>
+                                <div class="text-sm text-gray-600">Interacciones</div>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-700 text-sm italic mb-4">"Proceso: Optimización de perfil → Claridad en comunicación → Feed como vidriera → Reels estratégicos → Consistencia"</p>
+                        <div class="text-center">
+                            <span class="text-brand-dark font-semibold text-sm">👆 Haz click para ver el proceso completo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galería Visual -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-center mb-12 text-brand-dark">📸 Galería Visual - Ejemplos Reales</h3>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Reels Editados -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center cursor-pointer" onclick="showExample('reels')">
+                        <div class="text-4xl mb-4">🎬</div>
+                        <h4 class="font-semibold mb-3 text-brand-dark">Reels Editados</h4>
+                        <div class="space-y-2 text-sm text-gray-600">
+                            <div class="bg-brand-light p-2 rounded">Ver ejemplos reales</div>
+                            <div class="bg-brand-light p-2 rounded">Enlaces directos</div>
+                            <div class="bg-brand-light p-2 rounded">Instagram</div>
+                        </div>
+                        <div class="mt-4 text-brand-dark font-semibold text-sm">👆 Click para ver ejemplos</div>
+                    </div>
+
+                    <!-- Antes y Después -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center cursor-pointer" onclick="showExample('feeds')">
+                        <div class="text-4xl mb-4">📱</div>
+                        <h4 class="font-semibold mb-3 text-brand-dark">Antes y Después</h4>
+                        <div class="space-y-2 text-sm text-gray-600">
+                            <div class="bg-brand-light p-2 rounded">Los Ahumados de Juan</div>
+                            <div class="bg-brand-light p-2 rounded">Diseño Urbano</div>
+                            <div class="bg-brand-light p-2 rounded">Transformaciones completas</div>
+                        </div>
+                        <div class="mt-4 text-brand-dark font-semibold text-sm">👆 Click para ver ejemplos</div>
+                    </div>
+
+                    <!-- Catálogos -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center cursor-pointer" onclick="showExample('catalogo')">
+                        <div class="text-4xl mb-4">📖</div>
+                        <h4 class="font-semibold mb-3 text-brand-dark">Catálogos</h4>
+                        <div class="space-y-2 text-sm text-gray-600">
+                            <div class="bg-brand-light p-2 rounded">WhatsApp Business</div>
+                            <div class="bg-brand-light p-2 rounded">PDF descargable</div>
+                            <div class="bg-brand-light p-2 rounded">Ejemplos reales</div>
+                        </div>
+                        <div class="mt-4 text-brand-dark font-semibold text-sm">👆 Click para ver ejemplos</div>
+                    </div>
+
+                    <!-- Invitaciones Especiales -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center cursor-pointer" onclick="showExample('invitacion')">
+                        <div class="text-4xl mb-4">💌</div>
+                        <h4 class="font-semibold mb-3 text-brand-dark">Invitaciones Especiales</h4>
+                        <div class="space-y-2 text-sm text-gray-600">
+                            <div class="bg-brand-light p-2 rounded">Digitales personalizadas</div>
+                            <div class="bg-brand-light p-2 rounded">Eventos únicos</div>
+                            <div class="bg-brand-light p-2 rounded">Interactivas</div>
+                        </div>
+                        <div class="mt-4 text-brand-dark font-semibold text-sm">👆 Click para ver ejemplos</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicios Portfolio -->
+            <div>
+                <h3 class="text-2xl font-bold text-center mb-12 text-brand-dark">🛠️ Herramientas y Servicios</h3>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                        <div class="text-4xl mb-4">📅</div>
+                        <h3 class="font-semibold mb-2 text-brand-dark">Calendarios de contenido</h3>
+                        <p class="text-gray-600 text-sm mb-4">Planificación estratégica mensual</p>
+                        <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Me%20interesa%20el%20servicio%20de%20Calendarios%20de%20contenido.%20¿Podrías%20contarme%20más?" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                            Quiero mi calendario
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                        <div class="text-4xl mb-4">📋</div>
+                        <h3 class="font-semibold mb-2 text-brand-dark">Tableros Trello</h3>
+                        <p class="text-gray-600 text-sm mb-4">Organización y seguimiento</p>
+                        <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Me%20interesa%20el%20servicio%20de%20Tableros%20Trello.%20¿Podrías%20contarme%20más?" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                            Quiero mi tablero
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                        <div class="text-4xl mb-4">📈</div>
+                        <h3 class="font-semibold mb-2 text-brand-dark">Métricas & Resultados</h3>
+                        <p class="text-gray-600 text-sm mb-4">Análisis antes/después</p>
+                        <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Me%20interesa%20el%20servicio%20de%20Métricas%20y%20Resultados.%20¿Podrías%20contarme%20más?" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                            Quiero mis métricas
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                        <div class="text-4xl mb-4">🎬</div>
+                        <h3 class="font-semibold mb-2 text-brand-dark">Reels editados</h3>
+                        <p class="text-gray-600 text-sm mb-4">Contenido viral y atractivo</p>
+                        <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Me%20interesa%20el%20servicio%20de%20Reels%20editados.%20¿Podrías%20contarme%20más?" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                            Quiero mis reels
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                        <div class="text-4xl mb-4">📱</div>
+                        <h3 class="font-semibold mb-2 text-brand-dark">Feeds organizados</h3>
+                        <p class="text-gray-600 text-sm mb-4">Estética cohesiva y profesional</p>
+                        <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Me%20interesa%20el%20servicio%20de%20Feeds%20organizados.%20¿Podrías%20contarme%20más?" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                            Quiero mi feed
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                        <div class="text-4xl mb-4">🎯</div>
+                        <h3 class="font-semibold mb-2 text-brand-dark">Campañas publicitarias</h3>
+                        <p class="text-gray-600 text-sm mb-4">Estrategias de conversión</p>
+                        <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Me%20interesa%20el%20servicio%20de%20Campañas%20publicitarias.%20¿Podrías%20contarme%20más?" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                            Quiero mi campaña
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                        <div class="text-4xl mb-4">🤖</div>
+                        <h3 class="font-semibold mb-2 text-brand-dark">Automatizaciones</h3>
+                        <p class="text-gray-600 text-sm mb-4">Chatbots y respuestas automáticas</p>
+                        <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Me%20interesa%20el%20servicio%20de%20Automatizaciones.%20¿Podrías%20contarme%20más?" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                            Quiero automatizar
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                        <div class="text-4xl mb-4">🎨</div>
+                        <h3 class="font-semibold mb-2 text-brand-dark">Plantillas Canva</h3>
+                        <p class="text-gray-600 text-sm mb-4">Diseños editables personalizados</p>
+                        <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Me%20interesa%20el%20servicio%20de%20Plantillas%20Canva.%20¿Podrías%20contarme%20más?" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                            Quiero mis plantillas
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                        <div class="text-4xl mb-4">💼</div>
+                        <h3 class="font-semibold mb-2 text-brand-dark">Portfolios profesionales</h3>
+                        <p class="text-gray-600 text-sm mb-4">Presentaciones impactantes de trabajos</p>
+                        <div class="space-y-2 mb-4">
+                            <a href="https://candeladiaz.my.canva.site/creadora-de-contenido" target="_blank" rel="noopener noreferrer" class="block bg-blue-100 text-blue-800 px-3 py-2 rounded-lg text-xs hover:bg-blue-200 transition-colors">
+                                👀 Ver ejemplo real
+                            </a>
+                        </div>
+                        <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Me%20interesa%20el%20servicio%20de%20Portfolios%20profesionales.%20¿Podrías%20contarme%20más?" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                            Quiero mi portfolio
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                        <div class="text-4xl mb-4">📖</div>
+                        <h3 class="font-semibold mb-2 text-brand-dark">Catálogos interactivos</h3>
+                        <p class="text-gray-600 text-sm mb-4">Productos y servicios digitales</p>
+                        <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Me%20interesa%20el%20servicio%20de%20Catálogos%20interactivos.%20¿Podrías%20contarme%20más?" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                            Quiero mi catálogo
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                        <div class="text-4xl mb-4">💌</div>
+                        <h3 class="font-semibold mb-2 text-brand-dark">Invitaciones digitales</h3>
+                        <p class="text-gray-600 text-sm mb-4">Todo tipo de eventos + flyer recordatorio</p>
+                        <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Me%20interesa%20el%20servicio%20de%20Invitaciones%20digitales.%20¿Podrías%20contarme%20más?" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                            Quiero mi invitación
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section-padding bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gradient">⭐ Testimonios</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-brand-light rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-brand-dark rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">C</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-brand-dark">Camilo Castro</h4>
+                            <p class="text-gray-600 text-sm">Dueño de quinta</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Profesional, organizada y con resultados reales. Contraté la creación de contenido y publicidad y tengo toda la agenda reservada gracias a esos servicios."</p>
+                </div>
+
+                <div class="bg-brand-light rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-brand-dark rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">M</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-brand-dark">María González</h4>
+                            <p class="text-gray-600 text-sm">Emprendedora</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Candela transformó completamente mi presencia en redes. Contraté el servicio de social media manager ya que no tengo tiempo de pensar ni planificar estrategias y al seguir su paso a paso hice crecer mucho mi cuenta y aumentaron las ventas un 100%, buena estrategia y personalizada."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section-padding gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8">📬 ¿Listo para hacer crecer tu marca?</h2>
+            <p class="text-xl mb-12 opacity-90">Conversemos sobre tus objetivos y creemos juntos la estrategia perfecta para tu negocio</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <a href="https://www.instagram.com/optimo.digital/" target="_blank" rel="noopener noreferrer" class="bg-white/20 backdrop-blur-sm rounded-xl p-6 hover:bg-white/30 transition-colors">
+                    <div class="text-3xl mb-3">📱</div>
+                    <h3 class="font-semibold mb-2">Instagram</h3>
+                    <p class="opacity-80">@optimo.digital</p>
+                </a>
+
+                <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Me%20interesa%20trabajar%20contigo" target="_blank" rel="noopener noreferrer" class="bg-white/20 backdrop-blur-sm rounded-xl p-6 hover:bg-white/30 transition-colors">
+                    <div class="text-3xl mb-3">💬</div>
+                    <h3 class="font-semibold mb-2">WhatsApp</h3>
+                    <p class="opacity-80">Conversemos ahora</p>
+                </a>
+
+                <a href="mailto:optimoempresadigital@gmail.com" target="_blank" rel="noopener noreferrer" class="bg-white/20 backdrop-blur-sm rounded-xl p-6 hover:bg-white/30 transition-colors">
+                    <div class="text-3xl mb-3">📧</div>
+                    <h3 class="font-semibold mb-2">Email</h3>
+                    <p class="opacity-80">optimoempresadigital@gmail.com</p>
+                </a>
+            </div>
+
+            <a href="https://wa.me/5491165773213?text=Hola%20Candela!%20Quiero%20empezar%20mi%20proyecto%20contigo" target="_blank" rel="noopener noreferrer" class="inline-block bg-brand-light text-brand-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-white transition-colors">
+                Empezar mi proyecto 🚀
+            </a>
+        </div>
+    </section>
+
+    <!-- Modal para Casos de Estudio -->
+    <div id="caseStudyModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 id="modalTitle" class="text-3xl font-bold text-brand-dark"></h2>
+                    <button onclick="closeCaseStudy()" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="modalContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center space-x-3 mb-4">
+                <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2ZM12 4.3L19 8.2V10C19 15.1 16.2 18.7 12 20C7.8 18.7 5 15.1 5 10V8.2L12 4.3ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z"/>
+                    </svg>
+                </div>
+                <span class="font-semibold">Óptimo Digital</span>
+            </div>
+            <p class="text-gray-400">&copy; 2024 Óptimo Digital - Candela Díaz | Social Media Manager & Community Manager</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+
+        // Example Modal Functions
+        function showExample(type) {
+            const modal = document.getElementById('caseStudyModal');
+            const title = document.getElementById('modalTitle');
+            const content = document.getElementById('modalContent');
+            
+            if (type === 'reels') {
+                title.textContent = '🎬 Reels Editados - Ejemplos Reales';
+                content.innerHTML = `
+                    <div class="space-y-6">
+                        <div class="bg-brand-light p-6 rounded-xl">
+                            <h3 class="text-xl font-bold mb-4 text-brand-dark">🎬 Mis Reels Reales</h3>
+                            <p class="text-gray-700">Aquí puedes ver ejemplos reales de reels que he editado para mis clientes. Cada uno está adaptado a las tendencias del momento y a los objetivos específicos de la marca.</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                                <h4 class="font-bold mb-3 text-brand-dark">Reel 1</h4>
+                                <div class="bg-gradient-to-br from-pink-100 to-pink-200 p-4 rounded-lg mb-4">
+                                    <div class="text-3xl mb-2">🎬</div>
+                                    <p class="text-sm text-pink-700">Contenido de tendencia adaptado</p>
+                                </div>
+                                <a href="https://www.instagram.com/reel/DMeBzhYOb5Y/" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                                    Ver en Instagram
+                                </a>
+                            </div>
+                            
+                            <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                                <h4 class="font-bold mb-3 text-brand-dark">Reel 2</h4>
+                                <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-4 rounded-lg mb-4">
+                                    <div class="text-3xl mb-2">🎬</div>
+                                    <p class="text-sm text-blue-700">Tutorial de producto</p>
+                                </div>
+                                <a href="https://www.instagram.com/reel/DJQFLqWuoo0/" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                                    Ver en Instagram
+                                </a>
+                            </div>
+                            
+                            <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                                <h4 class="font-bold mb-3 text-brand-dark">Reel 3</h4>
+                                <div class="bg-gradient-to-br from-green-100 to-green-200 p-4 rounded-lg mb-4">
+                                    <div class="text-3xl mb-2">🎬</div>
+                                    <p class="text-sm text-green-700">Behind the scenes</p>
+                                </div>
+                                <a href="https://www.instagram.com/reel/DLh7DYeOR9_/" target="_blank" rel="noopener noreferrer" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                                    Ver en Instagram
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-6">
+                            <h4 class="font-bold mb-3 text-blue-800">🎯 Mi Metodología para Reels</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <h5 class="font-semibold text-blue-700 mb-2">Análisis y Planificación:</h5>
+                                    <ul class="text-sm text-blue-600 space-y-1">
+                                        <li>• Estudio de tendencias actuales</li>
+                                        <li>• Adaptación a la marca específica</li>
+                                        <li>• Definición de objetivo del reel</li>
+                                        <li>• Selección de música y efectos</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-blue-700 mb-2">Edición y Optimización:</h5>
+                                    <ul class="text-sm text-blue-600 space-y-1">
+                                        <li>• Edición profesional con transiciones</li>
+                                        <li>• Hooks atractivos en los primeros 3 segundos</li>
+                                        <li>• Optimización de hashtags</li>
+                                        <li>• Timing perfecto de publicación</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else if (type === 'feeds') {
+                title.textContent = '📱 Transformaciones de Feeds - Antes y Después';
+                content.innerHTML = `
+                    <div class="space-y-6">
+                        <div class="bg-brand-light p-6 rounded-xl">
+                            <h3 class="text-xl font-bold mb-4 text-brand-dark">🔄 Transformaciones Reales</h3>
+                            <p class="text-gray-700 mb-4">Aquí puedes ver las transformaciones reales que he realizado en los perfiles de mis clientes.</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8 mb-8">
+                            <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                                <h4 class="font-bold mb-4 text-brand-dark">🥩 Los Ahumados de Juan</h4>
+                                <div class="bg-brand-light p-6 rounded-lg mb-4">
+                                    <p class="text-sm text-gray-700 mb-4">Transformación completa del feed</p>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="bg-red-100 p-3 rounded-lg">
+                                            <div class="font-semibold text-red-700 mb-2">ANTES</div>
+                                            <div class="bg-white rounded border-2 border-red-200 overflow-hidden">
+                                                <img src="https://i.imgur.com/oBJGqRD.jpg" alt="Feed antes - Los Ahumados de Juan" class="w-full h-32 object-cover" onerror="this.src=''; this.alt='Imagen no disponible'; this.style.display='none';">
+                                            </div>
+                                        </div>
+                                        <div class="bg-green-100 p-3 rounded-lg">
+                                            <div class="font-semibold text-green-700 mb-2">DESPUÉS</div>
+                                            <div class="bg-white rounded border-2 border-green-200 overflow-hidden">
+                                                <img src="https://i.imgur.com/VR6DHi8.jpg" alt="Feed después - Los Ahumados de Juan" class="w-full h-32 object-cover" onerror="this.src=''; this.alt='Imagen no disponible'; this.style.display='none';">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                                <h4 class="font-bold mb-4 text-brand-dark">👗 Diseño Urbano</h4>
+                                <div class="bg-brand-light p-6 rounded-lg mb-4">
+                                    <p class="text-sm text-gray-700 mb-4">Claridad en comunicación</p>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="bg-red-100 p-3 rounded-lg">
+                                            <div class="font-semibold text-red-700 mb-2">ANTES</div>
+                                            <div class="bg-white rounded border-2 border-red-200 overflow-hidden">
+                                                <img src="https://i.imgur.com/2DnEoKd.jpg" alt="Feed antes - Diseño Urbano" class="w-full h-32 object-cover" onerror="this.src=''; this.alt='Imagen no disponible'; this.style.display='none';">
+                                            </div>
+                                        </div>
+                                        <div class="bg-green-100 p-3 rounded-lg">
+                                            <div class="font-semibold text-green-700 mb-2">DESPUÉS</div>
+                                            <div class="bg-white rounded border-2 border-green-200 overflow-hidden">
+                                                <img src="https://i.imgur.com/kGGAw2U.jpg" alt="Feed después - Diseño Urbano" class="w-full h-32 object-cover" onerror="this.src=''; this.alt='Imagen no disponible'; this.style.display='none';">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else if (type === 'catalogo') {
+                title.textContent = '📖 Catálogos Digitales - Ejemplos Reales';
+                content.innerHTML = `
+                    <div class="space-y-6">
+                        <div class="bg-brand-light p-6 rounded-xl">
+                            <h3 class="text-xl font-bold mb-4 text-brand-dark">💼 Catálogos que Venden</h3>
+                            <p class="text-gray-700">Aquí puedes ver ejemplos reales de catálogos que he creado para mis clientes. Cada uno está diseñado para facilitar la venta y mejorar la experiencia del cliente.</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <!-- Catálogo WhatsApp Business -->
+                            <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                                <h4 class="font-bold mb-4 text-green-800 flex items-center justify-center">
+                                    <span class="text-2xl mr-2">📱</span>
+                                    Catálogo WhatsApp Business
+                                </h4>
+                                
+                                <div class="bg-green-50 p-6 rounded-lg mb-4">
+                                    <div class="text-4xl mb-3">📱</div>
+                                    <p class="text-sm text-green-700 mb-4">Catálogo integrado en WhatsApp</p>
+                                    <div class="bg-white p-3 rounded">
+                                        <h5 class="font-semibold text-green-700 mb-2">✨ Incluye:</h5>
+                                        <ul class="text-xs text-green-600 space-y-1">
+                                            <li>• Productos organizados por categorías</li>
+                                            <li>• Fotos profesionales optimizadas</li>
+                                            <li>• Descripciones claras y persuasivas</li>
+                                            <li>• Precios actualizados</li>
+                                            <li>• Botones de compra directa</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <!-- Fotos reales del catálogo -->
+                                <div class="grid grid-cols-1 gap-3 mb-4">
+                                    <div class="bg-white rounded border-2 border-green-200 overflow-hidden">
+                                        <img src="https://i.imgur.com/mCbciLQ.jpg" alt="Catálogo WhatsApp - Vista principal" class="w-full h-auto object-contain" onerror="this.src=''; this.alt='Catálogo no disponible'; this.style.display='none';">
+                                    </div>
+                                    <div class="bg-white rounded border-2 border-green-200 overflow-hidden">
+                                        <img src="https://i.imgur.com/5KS2flC.jpg" alt="Catálogo WhatsApp - Productos" class="w-full h-auto object-contain" onerror="this.src=''; this.alt='Catálogo no disponible'; this.style.display='none';">
+                                    </div>
+                                    <div class="bg-white rounded border-2 border-green-200 overflow-hidden">
+                                        <img src="https://i.imgur.com/Y3O8Rcx.jpg" alt="Catálogo WhatsApp - Detalles" class="w-full h-auto object-contain" onerror="this.src=''; this.alt='Catálogo no disponible'; this.style.display='none';">
+                                    </div>
+                                </div>
+                                <p class="text-green-700 text-sm">👆 Ejemplos reales de catálogos creados</p>
+                            </div>
+                            
+                            <!-- Catálogo PDF -->
+                            <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                                <h4 class="font-bold mb-4 text-red-800 flex items-center justify-center">
+                                    <span class="text-2xl mr-2">📄</span>
+                                    Catálogo PDF Profesional
+                                </h4>
+                                
+                                <div class="bg-red-50 p-6 rounded-lg mb-4">
+                                    <div class="text-4xl mb-3">📄</div>
+                                    <p class="text-sm text-red-700 mb-4">Diseño profesional para presentaciones</p>
+                                    <div class="bg-white p-3 rounded">
+                                        <h5 class="font-semibold text-red-700 mb-2">🎯 Ideal para:</h5>
+                                        <ul class="text-xs text-red-600 space-y-1">
+                                            <li>• Presentaciones comerciales</li>
+                                            <li>• Envío por email</li>
+                                            <li>• Impresión física</li>
+                                            <li>• Archivo permanente</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <a href="https://drive.google.com/uc?export=view&id=18WFRsR3mnB64KgTtXxSeZcD8xVF0DxKs" target="_blank" rel="noopener noreferrer" class="bg-red-600 text-white px-4 py-2 rounded-full text-sm hover:bg-red-700 transition-colors">
+                                    Ver Ejemplo PDF
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-6">
+                            <h4 class="font-bold mb-3 text-blue-800">🛠️ Mi Proceso de Creación</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-sm font-bold text-blue-800">1</span>
+                                    </div>
+                                    <span class="text-blue-700">Análisis de productos/servicios y público objetivo</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-sm font-bold text-blue-800">2</span>
+                                    </div>
+                                    <span class="text-blue-700">Organización por categorías lógicas</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-sm font-bold text-blue-800">3</span>
+                                    </div>
+                                    <span class="text-blue-700">Optimización de imágenes y descripciones</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center mr-3">
+                                        <span class="text-sm font-bold text-blue-800">4</span>
+                                    </div>
+                                    <span class="text-blue-700">Integración con WhatsApp y redes sociales</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else if (type === 'invitacion') {
+                title.textContent = '💌 Invitaciones Digitales Personalizadas';
+                content.innerHTML = `
+                    <div class="space-y-6">
+                        <div class="bg-brand-light p-6 rounded-xl">
+                            <h3 class="text-xl font-bold mb-4 text-brand-dark">🎉 Para Todo Tipo de Eventos</h3>
+                            <p class="text-gray-700">Creo invitaciones digitales únicas y personalizadas para cualquier ocasión especial, con la opción de incluir flyer recordatorio.</p>
+                        </div>
+                        
+                        <div class="text-center bg-white p-6 rounded-xl border-2 border-brand-dark">
+                            <h4 class="font-bold mb-3 text-brand-dark">👀 Ver Ejemplo Real</h4>
+                            <p class="text-gray-600 mb-4">Mira una invitación interactiva que creé:</p>
+                            <a href="https://diseñado.my.canva.site/invitacion2" target="_blank" rel="noopener noreferrer" class="inline-block bg-brand-dark text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors">
+                                Ver Invitación de Ejemplo 🎉
+                            </a>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white border-2 border-pink-200 p-6 rounded-xl">
+                                <h4 class="font-bold mb-4 text-pink-800 flex items-center">
+                                    <span class="text-2xl mr-2">🎊</span>
+                                    Eventos Sociales
+                                </h4>
+                                
+                                <div class="space-y-3">
+                                    <div class="bg-pink-50 p-3 rounded-lg">
+                                        <ul class="text-sm text-pink-700 space-y-1">
+                                            <li>• <strong>Cumpleaños:</strong> Infantiles, adultos, temáticas</li>
+                                            <li>• <strong>Bautismos:</strong> Diseños tiernos y elegantes</li>
+                                            <li>• <strong>Fiestas:</strong> Graduaciones, aniversarios</li>
+                                            <li>• <strong>Celebraciones:</strong> Baby shower, despedidas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white border-2 border-blue-200 p-6 rounded-xl">
+                                <h4 class="font-bold mb-4 text-blue-800 flex items-center">
+                                    <span class="text-2xl mr-2">💼</span>
+                                    Eventos Corporativos
+                                </h4>
+                                
+                                <div class="space-y-3">
+                                    <div class="bg-blue-50 p-3 rounded-lg">
+                                        <ul class="text-sm text-blue-700 space-y-1">
+                                            <li>• <strong>Lanzamientos:</strong> Productos, servicios</li>
+                                            <li>• <strong>Conferencias:</strong> Seminarios, workshops</li>
+                                            <li>• <strong>Networking:</strong> Eventos de conexión</li>
+                                            <li>• <strong>Inauguraciones:</strong> Locales, oficinas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Case Study Modal Functions
+        function showCaseStudy(type) {
+            const modal = document.getElementById('caseStudyModal');
+            const title = document.getElementById('modalTitle');
+            const content = document.getElementById('modalContent');
+            
+            if (type === 'ahumados') {
+                title.textContent = '🥩 Caso de Estudio: Los Ahumados de Juan';
+                content.innerHTML = `
+                    <div class="space-y-8">
+                        <div class="bg-brand-light p-6 rounded-xl">
+                            <h3 class="text-xl font-bold mb-4 text-brand-dark">📋 Situación Inicial</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• Publicaciones poco frecuentes y sin estrategia</li>
+                                <li>• Baja interacción en el contenido</li>
+                                <li>• Perfil sin optimizar (biografía e historias poco claras)</li>
+                                <li>• Seguían a muchas cuentas para conseguir clientes</li>
+                                <li>• Contenido sin calidad ni coherencia</li>
+                            </ul>
+                        </div>
+
+                        <!-- Métricas visuales profesionales -->
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-red-50 border-2 border-red-200 p-6 rounded-xl text-center">
+                                <h4 class="font-bold mb-4 text-red-800">📊 Métricas ANTES (Inicio)</h4>
+                                <div class="bg-white p-6 rounded-lg border-2 border-red-300 mb-4">
+                                    <img src="https://i.imgur.com/hFFIw1V.jpg" alt="Métricas iniciales Los Ahumados de Juan" class="w-full h-48 object-contain rounded-lg mb-4" onerror="this.src=''; this.alt='Métricas no disponibles'; this.style.display='none';">
+                                    <div class="space-y-3">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Seguidores:</span>
+                                            <span class="font-bold text-red-600">1.631</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Visualizaciones:</span>
+                                            <span class="font-bold text-red-600">1.500</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Interacciones:</span>
+                                            <span class="font-bold text-red-600">1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-red-700 text-sm">Estado inicial del perfil</p>
+                            </div>
+                            
+                            <div class="bg-green-50 border-2 border-green-200 p-6 rounded-xl text-center">
+                                <h4 class="font-bold mb-4 text-green-800">📈 Métricas DESPUÉS (3 meses)</h4>
+                                <div class="bg-white p-6 rounded-lg border-2 border-green-300 mb-4">
+                                    <img src="https://i.imgur.com/799naZT.jpg" alt="Métricas después Los Ahumados de Juan" class="w-full h-48 object-contain rounded-lg mb-4" onerror="this.src=''; this.alt='Métricas no disponibles'; this.style.display='none';">
+                                    <div class="space-y-3">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Seguidores:</span>
+                                            <span class="font-bold text-green-600">1.697 (+66)</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Visualizaciones:</span>
+                                            <span class="font-bold text-green-600">16.000 (+966%)</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Interacciones:</span>
+                                            <span class="font-bold text-green-600">454 (+45.300%)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-green-700 text-sm">Resultados después de 3 meses</p>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white border-2 border-brand-dark p-6 rounded-xl">
+                                <h3 class="text-lg font-bold mb-4 text-brand-dark">🎯 Estrategia Implementada</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-brand-dark">✅ Optimización del perfil</h4>
+                                        <p class="text-sm text-gray-600 ml-4">Bio, historias destacadas y catálogo WhatsApp</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-brand-dark">✅ Contenido atractivo</h4>
+                                        <p class="text-sm text-gray-600 ml-4">Creación de contenido de valor y calidad</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-brand-dark">✅ Referente a cámara</h4>
+                                        <p class="text-sm text-gray-600 ml-4">Incorporación de una persona que represente la marca</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-brand-dark">✅ Diversificación</h4>
+                                        <p class="text-sm text-gray-600 ml-4">Entretenimiento + educativo + ventas</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-brand-dark">✅ Optimización de seguidos</h4>
+                                        <p class="text-sm text-gray-600 ml-4">Reducción para mejorar posicionamiento</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl">
+                                <h3 class="text-lg font-bold mb-4 text-orange-800">📈 Resultados en 3 Meses</h3>
+                                <div class="space-y-4">
+                                    <div class="bg-white p-4 rounded-lg flex items-center">
+                                        <div class="text-3xl mr-4">👥</div>
+                                        <div>
+                                            <div class="text-2xl font-bold text-orange-600">1.631 → 1.697</div>
+                                            <div class="text-sm text-gray-600">+66 seguidores</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg flex items-center">
+                                        <div class="text-3xl mr-4">👀</div>
+                                        <div>
+                                            <div class="text-2xl font-bold text-orange-600">1.500 → 16.000</div>
+                                            <div class="text-sm text-gray-600">+966% visualizaciones</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg flex items-center">
+                                        <div class="text-3xl mr-4">💬</div>
+                                        <div>
+                                            <div class="text-2xl font-bold text-orange-600">1 → 454</div>
+                                            <div class="text-sm text-gray-600">+45.300% interacciones</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-green-50 border-l-4 border-green-400 p-6">
+                            <h3 class="text-lg font-bold mb-2 text-green-800">✨ Resultados Cualitativos</h3>
+                            <ul class="space-y-2 text-green-700">
+                                <li>• Perfil profesional y claro para el cliente</li>
+                                <li>• Más alcance e interacción en publicaciones</li>
+                                <li>• Catálogo de WhatsApp implementado para agilizar ventas</li>
+                                <li>• Comunidad más orgánica y confiable</li>
+                            </ul>
+                        </div>
+                    </div>
+                `;
+            } else if (type === 'diseno') {
+                title.textContent = '👗 Caso de Estudio: Diseño Urbano';
+                content.innerHTML = `
+                    <div class="space-y-8">
+                        <div class="bg-brand-light p-6 rounded-xl">
+                            <h3 class="text-xl font-bold mb-4 text-brand-dark">🚨 Situación Inicial</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>• 4.306 seguidores pero solo 11.000 visualizaciones mensuales</li>
+                                <li>• Confusión en la propuesta: 3 locales integrados (Diseño Urbano unisex, Estancia Argentina hombre y Diseño Urbano mujer)</li>
+                                <li>• No quedaba claro qué ofrecían</li>
+                                <li>• Perfil sin optimizar ni guías claras para el cliente</li>
+                                <li>• Publicaciones poco consistentes y sin estrategia definida</li>
+                            </ul>
+                        </div>
+
+                        <!-- Métricas visuales profesionales -->
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-red-50 border-2 border-red-200 p-6 rounded-xl text-center">
+                                <h4 class="font-bold mb-4 text-red-800">📊 Métricas ANTES (Inicio)</h4>
+                                <div class="bg-white p-6 rounded-lg border-2 border-red-300 mb-4">
+                                    <img src="https://i.imgur.com/QFjBLFd.jpg" alt="Métricas iniciales Diseño Urbano" class="w-full h-48 object-contain rounded-lg mb-4" onerror="this.src=''; this.alt='Métricas no disponibles'; this.style.display='none';">
+                                    <div class="space-y-3">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Seguidores:</span>
+                                            <span class="font-bold text-red-600">4.306</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Visualizaciones:</span>
+                                            <span class="font-bold text-red-600">11.000</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Interacciones:</span>
+                                            <span class="font-bold text-red-600">17</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-red-700 text-sm">Estado inicial del perfil</p>
+                            </div>
+                            
+                            <div class="bg-green-50 border-2 border-green-200 p-6 rounded-xl text-center">
+                                <h4 class="font-bold mb-4 text-green-800">📈 Métricas DESPUÉS (2 meses)</h4>
+                                <div class="bg-white p-6 rounded-lg border-2 border-green-300 mb-4">
+                                    <img src="https://i.imgur.com/oHNx21J.jpg" alt="Métricas después Diseño Urbano" class="w-full h-48 object-contain rounded-lg mb-4" onerror="this.src=''; this.alt='Métricas no disponibles'; this.style.display='none';">
+                                    <div class="space-y-3">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Seguidores:</span>
+                                            <span class="font-bold text-green-600">4.447 (+141)</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Visualizaciones:</span>
+                                            <span class="font-bold text-green-600">40.000 (+264%)</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Interacciones:</span>
+                                            <span class="font-bold text-green-600">441 (+2.494%)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-green-700 text-sm">Resultados después de 2 meses</p>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white border-2 border-brand-dark p-6 rounded-xl">
+                                <h3 class="text-lg font-bold mb-4 text-brand-dark">⚙️ Estrategia Aplicada (2 meses)</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-brand-dark">✅ Optimización del perfil</h4>
+                                        <p class="text-sm text-gray-600 ml-4">Biografía clara y simple, historias destacadas organizadas y enlaces a cada local</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-brand-dark">✅ Claridad en comunicación</h4>
+                                        <p class="text-sm text-gray-600 ml-4">Transmitir las 3 líneas de negocio de forma sencilla y ordenada</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-brand-dark">✅ Calendario estratégico</h4>
+                                        <ul class="text-sm text-gray-600 ml-4">
+                                            <li>• Feed → vidriera digital para mostrar variedad</li>
+                                            <li>• Reels → motor de atracción y posicionamiento</li>
+                                            <li>• Consistencia para generar recordación</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl">
+                                <h3 class="text-lg font-bold mb-4 text-purple-800">📈 Resultados en 2 Meses</h3>
+                                <div class="space-y-4">
+                                    <div class="bg-white p-4 rounded-lg flex items-center">
+                                        <div class="text-3xl mr-4">👥</div>
+                                        <div>
+                                            <div class="text-2xl font-bold text-purple-600">4.306 → 4.447</div>
+                                            <div class="text-sm text-gray-600">+141 seguidores</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg flex items-center">
+                                        <div class="text-3xl mr-4">👀</div>
+                                        <div>
+                                            <div class="text-2xl font-bold text-purple-600">11.000 → 40.000</div>
+                                            <div class="text-sm text-gray-600">+264% visualizaciones mensuales</div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg flex items-center">
+                                        <div class="text-3xl mr-4">💬</div>
+                                        <div>
+                                            <div class="text-2xl font-bold text-purple-600">17 → 441</div>
+                                            <div class="text-sm text-gray-600">+2.494% interacciones</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-green-50 border-l-4 border-green-400 p-6">
+                            <h3 class="text-lg font-bold mb-2 text-green-800">✅ Resultados Cualitativos</h3>
+                            <ul class="space-y-2 text-green-700">
+                                <li>• Línea estética más clara, profesional y coherente</li>
+                                <li>• Mayor interacción y reconocimiento de marca en la audiencia</li>
+                                <li>• Una cuenta que transmite claridad, confianza y atractivo visual</li>
+                                <li>• Comunicación efectiva para sus distintos públicos</li>
+                            </ul>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCaseStudy() {
+            const modal = document.getElementById('caseStudyModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('caseStudyModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeCaseStudy();
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97a7f6a3e4241e9a',t:'MTc1NzA5ODc2My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
